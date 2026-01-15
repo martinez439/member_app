@@ -1,0 +1,157 @@
+:root{
+  --blue: #1d4ed8;
+  --blue-2: #2563eb;
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --error: #b91c1c;
+  --success: #166534;
+}
+
+* { box-sizing: border-box; }
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container{
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.brand{
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.topbar-right{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.card{
+  margin-top: 18px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+h1{
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.big{
+  font-size: 44px;
+  margin: 0;
+  color: var(--blue);
+  letter-spacing: -0.02em;
+}
+
+label{
+  display: block;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+input{
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  outline: none;
+}
+
+input:focus{
+  border-color: var(--blue-2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.hint{
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.row{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.btn{
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn:hover{ background: var(--blue-2); }
+
+.btn-outline{
+  background: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover{
+  background: rgba(29, 78, 216, 0.08);
+}
+
+.link{
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link:hover{ text-decoration: underline; }
+
+.muted{ color: var(--muted); }
+
+.alert{
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.alert.error{
+  border-color: rgba(185, 28, 28, 0.3);
+  color: var(--error);
+  background: rgba(185, 28, 28, 0.06);
+}
+
+.alert.success{
+  border-color: rgba(22, 101, 52, 0.3);
+  color: var(--success);
+  background: rgba(22, 101, 52, 0.06);
+}
+
+.form-error{
+  margin: 10px 0 0;
+  color: var(--error);
+  font-weight: 700;
+}
